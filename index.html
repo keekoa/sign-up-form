@@ -26,38 +26,39 @@
                     <div class="form-field">
                         <div>
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="Thor" pattern="^[A-Za-z -]+$" oninvalid="setCustomValidity('Please use only alphabets and dashes')">
+                            <input type="text" id="first-name" name="first-name" placeholder="Thor" pattern="^[A-Za-z -]+$" oninvalid="setCustomValidity('Please use only alphabets and dashes')" oninput="setCustomValidity('')">
                         </div>
                         <div>
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Odinson" pattern="^[A-Za-z -]+$" oninvalid="setCustomValidity('Please use only alphabets and dashes')">
+                            <input type="text" id="last-name" name="last-name" placeholder="Odinson" pattern="^[A-Za-z -]+$" oninvalid="setCustomValidity('Please use only alphabets and dashes')" oninput="setCustomValidity('')">
                         </div>
                     </div>
                     <div class="form-field">
                         <div>
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" placeholder="thorodinson@gmail.com" oninvalid="setCustomValidity('Please fill in valid email format with @')">
+                            <input type="email" id="email" name="email" placeholder="thorodinson@gmail.com" oninvalid="setCustomValidity('Please fill in valid email format with @')" oninput="setCustomValidity('')">
                         </div>
                         <div>
                             <label for="tel">PHONE NUMBER</label>
-                            <input type="tel" id="tel" name="tel" placeholder="08012345678" pattern="[0-9]{4,13}" maxlength="13" oninvalid="setCustomValidity('Please fill in only numbers between 4 to 13 digits')">
+                            <input type="tel" id="tel" name="tel" placeholder="08012345678" pattern="[0-9]{4,13}" maxlength="13" oninvalid="setCustomValidity('Please fill in only numbers between 4 to 13 digits')" oninput="setCustomValidity('')">
                         </div>
                     </div>
                     <div class="form-field">
                         <div>
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" placeholder="Password" minlength="8" maxlength="16" oninvalid="setCustomValidity('Please set your password between 8 to 16 characters')">
+                            <input type="password" id="password" name="password" placeholder="Password" minlength="8" maxlength="16" oninvalid="setCustomValidity('Please set your password between 8 to 16 characters')" oninput="setCustomValidity('')">
                         </div>
                         <div>
                             <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-pwd" name="confirm-pwd" placeholder="Confirm Password"  minlength="8" maxlength="16" oninvalid="setCustomValidity('Please set your password between 8 to 16 characters')">
+                            <input type="password" id="confirm-pwd" name="confirm-pwd" placeholder="Confirm Password"  minlength="8" maxlength="16" oninvalid="setCustomValidity('Please set your password between 8 to 16 characters')" oninput="setCustomValidity('')">
                         </div>
                     </div>
-                    <button type="submit">CREATE ACCOUNT</button>
+                    <button type="submit" id="submit">CREATE ACCOUNT</button>
                     <p>Already have an account? <a href="">Log in</a></p>
                 </form>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
